@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb://127.0.0.1/ecommerceDB');
+mongoose.connect('mongodb+srv://anjubhakta2426:12345@cluster0.xgy09rx.mongodb.net/?retryWrites=true&w=majority',{
+    useNewUrlParser: true
+});
 
 
 const db = mongoose.connection;
